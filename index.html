@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Template Showcase — WebAgency</title>
+<meta name="robots" content="noindex">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--gold:#c9a96e;--gold-grad:linear-gradient(135deg,#f3e2b3,#c9a96e 50%,#9a7536)}
+  body{font-family:'Satoshi',system-ui,sans-serif;background:#08080a;color:#f3efe7;line-height:1.6;
+    min-height:100vh;padding:clamp(2.5rem,6vw,5rem) clamp(1.2rem,5vw,3rem);
+    background-image:radial-gradient(50% 40% at 80% 0%,rgba(201,169,110,.16),transparent 60%),radial-gradient(45% 40% at 5% 15%,rgba(139,108,255,.12),transparent 60%)}
+  h1{font-family:'Clash Display',sans-serif;font-weight:600;font-size:clamp(2.2rem,6vw,4rem);letter-spacing:-.02em;line-height:1.05}
+  .gold{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:#9b958a;max-width:54ch;margin:1rem 0 3rem;font-size:1.1rem}
+  .eyebrow{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.2rem;display:block}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.3rem;max-width:1100px}
+  .card{display:block;border:1px solid rgba(255,255,255,.09);border-radius:22px;padding:2rem;text-decoration:none;color:inherit;
+    background:rgba(255,255,255,.045);backdrop-filter:blur(14px);transition:transform .4s cubic-bezier(.22,.61,.27,1),border-color .3s}
+  .card:hover{transform:translateY(-6px);border-color:rgba(201,169,110,.5)}
+  .card.soon{opacity:.5;pointer-events:none}
+  .tag{display:inline-block;font-size:.72rem;font-weight:700;padding:.25rem .7rem;border-radius:999px;margin-bottom:1.1rem;
+    background:rgba(201,169,110,.14);color:var(--gold)}
+  .tag.wip{background:rgba(255,255,255,.08);color:#9b958a}
+  .card h2{font-family:'Clash Display',sans-serif;font-weight:600;font-size:1.5rem;margin-bottom:.4rem}
+  .card p{color:#9b958a;font-size:.92rem;margin-bottom:1.2rem}
+  .go{color:var(--gold);font-weight:600;font-size:.9rem}
+  footer{margin-top:3.5rem;color:#6f6a62;font-size:.85rem}
+</style>
+</head>
+<body>
+  <span class="eyebrow">WebAgency · Boutique Templates 2026</span>
+  <h1>Template-uri <span class="gold">premium</span></h1>
+  <p class="sub">Redesign radical „boutique design agency" — bento grids, glassmorphism, tipografie display și micro-interacțiuni. Click pe oricare pentru demo live.</p>
+  <div class="grid">
+    <a class="card" href="./01-premium/">
+      <span class="tag">Dark Luxury</span>
+      <h2>01 · Premium</h2>
+      <p>Studio creativ. Dark mode cu accente aurii, bento grid, butoane magnetice, grain.</p>
+      <span class="go">Vezi demo →</span>
+    </a>
+    <span class="card soon">
+      <span class="tag wip">În lucru</span>
+      <h2>02 · Landing</h2>
+      <p>SaaS ultra-minimalist, optimizat pentru conversie.</p>
+      <span class="go">Curând</span>
+    </span>
+    <span class="card soon">
+      <span class="tag wip">În lucru</span>
+      <h2>03 · Store</h2>
+      <p>Magazin fashion / tech high-end.</p>
+      <span class="go">Curând</span>
+    </span>
+    <span class="card soon">
+      <span class="tag wip">În lucru</span>
+      <h2>04 · Luxury Real Estate</h2>
+      <p>Proprietăți de lux, imagini full-width.</p>
+      <span class="go">Curând</span>
+    </span>
+    <span class="card soon">
+      <span class="tag wip">În lucru</span>
+      <h2>05 · Medical Premium</h2>
+      <p>Clinică privată / stomatologie.</p>
+      <span class="go">Curând</span>
+    </span>
+  </div>
+  <footer>Generat cu sistemul config-driven · WebAgencyAI</footer>
+</body>
+</html>
